@@ -87,14 +87,13 @@ button{outline:0}
 
 #nav4 .depth1{position: static;}
 #nav4 .depth1 li > a{font-size: 1rem;}
-#nav4 .nav_box {position: absolute; /*top:calc(2.8rem + 25px);*/top: 78px; left: 0; width: 100%;
-                background-color: rgba(0,0,0,0.5); z-index: 96;
-                display: none;
-                padding: 10px 0; color: #fff;}
-
-#nav4 .depth1>li:hover .nav_box{display: block; }
+#nav4 .nav_box {position: absolute; /*top:calc(2.8rem + 25px);*/top: 75px; left: 0; width: 100%;
+                background-color: rgba(242,244,245,0.8); z-index: 96;
+                display: none; 
+                padding: 10px 0; color: #333; height: 270px;}
+#nav4 .depth1>li:hover .nav_box{display: block;}
 #nav4 .nav_box .depth2{width: 100%; margin: 0 auto; position: relative; 
-                        /*text-align: center;*/
+                        /*text-align: center;*/ 
                         padding-left: 100px; box-sizing: border-box;}
 #nav4 .nav_box .depth2:after{content: ''; display: block; clear: both;}
 #nav4 .depth2 > li{display: inline-block; box-sizing: border-box;
@@ -102,12 +101,12 @@ button{outline:0}
 #nav4 .depth2 li > a{font-size: 0.812rem;}
 
 #nav4 .depth2 > li:after{content: ''; display: inline-block; width: 5px; height:5px; 
-                         background-color:red; border-radius: 50%; 
+                         /*background-color:red; border-radius: 50%; */
                          margin-left: 20px; transform: translate(0, -3px);}
 #nav4 .depth2 > li:last-child:after{display: none;}
 
 /*header*/
-#header #logo{float: left; padding-top: 10px}
+#header #logo{float: left; }
 #header #nav4 .depth1{float: left; /*네비완료시 width 삭제*/ }
 #header #nav4 .top_icon{position: absolute; right: 40px; top: 0;}
 
