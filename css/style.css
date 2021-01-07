@@ -95,6 +95,7 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec5 .notice_wrap > div .box dd:first-child{padding-left: 26px; padding-top: 47px;}
 #sec5 .notice_wrap > div .box dt{padding-left: 26px; padding-top: 8px; padding-bottom: 8px;}
 #sec5 .notice_wrap > div .box dd:last-child{padding-left: 26px; padding-bottom: 47px;}
+#sec5::after{content: ''; clear: both; display: block;}
 
 /*sec5 end*/
 #sec6{margin-bottom: 95px;}
