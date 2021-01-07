@@ -121,7 +121,7 @@
 
 /***************RYAN****************************/
 #sec1{clear: both;}
-#sec1 .slick-slide img{width: 100%; min-width:; }
+#sec1 .slick-slide img{width: 100%; height: 820px;}
 #sec1 .slick-arrow{position: absolute; top: 50%; z-index: 99999;}
 #sec1 .slick-prev{ top: calc(50% - 50px); left:100px; width: 100px; height: 80px;
                     background: url(../images/); border: none; text-indent: -9999px;}

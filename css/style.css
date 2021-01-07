@@ -21,14 +21,21 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
     border: 1px solid #fff; border-radius: 40px; padding: 5px 20px;}
 /*********************section****************************/
 #sec1{margin-bottom: 95px;}
-#sec1 .big_banner{width: 60%; 
+#sec1 img{width: 100%;}
+#sec1 .big_banner{width: 60%; margin-top: 3px;
                   margin-right:10px ; float: left;}
-#sec1 .small_banner{width: calc(40% - 10px); float: right;}
+  
+#sec1 .small_banner{width: calc(40% - 10px); float: right; margin-top: 3px;}
 #sec1 .small_banner li{margin-bottom: 11px;}
 #sec1 .small_banner li:last-child{margin-bottom: 0;}
-#sec1 img{width: 100%;}
-#sec1::after{content: ''; clear: both; display: block;}
+#sec1 .small_banner > li{position: relative;}
+#sec1 .small_banner h1{color: #fff; position: absolute; top: 50px; left: 40px;}
+#sec1 .small_banner > li:nth-child(2) h1{color: #333333;}
+#sec1 .small_banner > li:nth-child(2) p{color: #333333;}
+#sec1 .small_banner p{color: #fff; position: absolute; top: 90px; left: 40px;}
 
+#sec1::after{content: ''; clear: both; display: block;}
+/*sec1 end*/
 #sec2{clear: both;}
 #sec2 .inner > div{margin-right:16px ; width:calc((100% - 32px) / 3);
                  overflow: hidden;
@@ -39,8 +46,8 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec2 .inner > div:last-child{margin-right:0;}
 #sec2:after{content: ''; display: block; clear: both;}
 #sec2 .inner > div a{box-sizing: border-box;}
-#sec2 .inner > div h3{margin-bottom: 95px;}
-
+#sec2 .price{margin-bottom: 95px;}
+/*sec2 end*/
 
 
 #sec3{}
@@ -48,11 +55,20 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec3 .inner{}
 #sec3 h2{margin-bottom: 2.5rem;}
 #sec3 .inner img{width: 100%;}
-#sec3 .left_news{width: 50%; background-color: red; height: 600px; float: left; margin-bottom: 95px;}
+#sec3 .left_news{width: calc(50% - 2px); background-color: red; height: 600px; float: left; margin-bottom: 95px;
+                 position: relative; border: 1px solid #e6e6e6;;}
 #sec3 .left_news img{height: 600px;}
-#sec3 .right_news{width: 50%; background-color: blue; height: 600px; float: left;}
-#sec3 .right_news img{height: 300px;}
-#sec3 .right_news li{width: 50%; float: left;}
+#sec3 .left_news h1{position: absolute; bottom: 160px; left: 70px;}
+#sec3 .left_news h2{position: absolute; bottom: 110px; left: 70px;}
+#sec3 .left_news p{position: absolute; bottom: 130px; left: 70px;}
+#sec3 .right_news{width:50%; height: 600px; float: left;}
+#sec3 .right_news img{height: 299px;}
+#sec3 .right_news li{width: calc(50% - 4px); float: left; border: 1px solid #e6e6e6;;}
+#sec3 .right_news > li{position: relative;}
+#sec3 .right_news h1{position: absolute; bottom: 25px; left: 20px; color: ;}
+#sec3 .right_news h2{position: absolute; bottom: -30px; left: 20px;}
+/*sec3 end*/
+
 
 #sec4{}
 #sec4{clear: both;}
@@ -65,34 +81,43 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec4:after{content: ''; display: block; clear: both;}
 #sec4 .inner > div a{box-sizing: border-box;
                         }
-#sec4 .inner > div h3{margin-bottom: 95px;}
+#sec4 .price{margin-bottom: 95px;}
 #sec4 .clinic_img img{height: 248px;}
+/*sec4 end*/
+#sec5{height: 400px;
+      }
+#sec5 .notice_wrap > div{/*overflow: hidden;*/float: left; width: calc((100% - 78px) / 3); margin-right: 36px;
+                        margin-bottom: 95px; border: 1px solid #e6e6e6;; position: relative;}
+#sec5 .notice_wrap > div img{width: 100%;}
+#sec5 .notice_wrap > div:last-child{margin-right: 0;}
+#sec5 .notice_wrap > div .box{border: 1px solid #e6e6e6; width: 95%; float: right; background-color: #E5E5E5;
+                              position: absolute; bottom: -50px; right: 0; height: ; box-sizing: border-box;}
+#sec5 .notice_wrap > div .box dd:first-child{padding-left: 26px; padding-top: 47px;}
+#sec5 .notice_wrap > div .box dt{padding-left: 26px; padding-top: 8px; padding-bottom: 8px;}
+#sec5 .notice_wrap > div .box dd:last-child{padding-left: 26px; padding-bottom: 47px;}
 
-#sec5{background-color: aqua;
-      height: 600px;
-      margin-bottom: 95px;}
-
-
+/*sec5 end*/
 #sec6{margin-bottom: 95px;}
 #sec6::after{display: block; clear: both; content: '';}
 #sec6 ul{}
 #sec6 ul > li{width: calc((100% - 24px) /3 ); height: 330px; margin-right: 12px;
             float: left; vertical-align: top;
             box-sizing: border-box; color: #fff; padding: 20px;}
-#sec6 ul .pho{background-color: #124295; }
-#sec6 ul .pho p{
-    width: 100%;
-    text-align: center;
-    left: 0;
-    top: 0;}
-#sec6 ul > li:first-child .call_num{
-    display: block;
-    text-align: left;
-    position: relative; 
-    color: red;
-}
+#sec6 ul > li h6{font-size: 1.125rem; margin-bottom: 14px;}
+#sec6 ul > li.pho{background-color: #124295; padding: 60px 80px; text-align: center;}
+#sec6 ul .pho p{text-align: left; padding-bottom: 10px; padding-top: ;}
+#sec6 ul .pho .em{ position: relative;}
+#sec6 ul .pho .em span{position: absolute; right: 0; top: 0px;}
+#sec6 ul .pho p span{float: right; margin-bottom: 24px; }
+#sec6 ul > li.pho .go{border: 1px solid #fff; padding: 6px 23px; display: block; clear: both;}
+#sec6 ul > li.pho .call_num{font-size: 1.75rem; margin-bottom: 20px; margin-left: 10px;}
+#sec6 ul > li.merch, #sec6 ul > li.ask{padding: 60px 33px;}
+#sec6 ul > li.merch h6, #sec6 ul > li.ask h6{border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 27px;}
+#sec6 ul > li.merch h6 a, #sec6 ul > li.ask h6 a{float: right;}
+#sec6 ul > li.merch span, #sec6 ul > li.ask span{float: right;}
+#sec6 ul > li.merch > div > a, #sec6 ul > li.ask > div > a{display: block; padding-top: 13px;}
 #sec6 ul .merch{background-color: #5C77A7;}
-#sec6 ul .ask{margin-right:0; background-color:#414141 ;}
+#sec6 ul .ask{margin-right:0; background-color:#414141;}
 
 
 

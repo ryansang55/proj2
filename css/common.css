@@ -51,7 +51,7 @@ button{outline:0}
 
 #header .top_icon .all_nav{background: none;position: absolute; top: 7px;}       
 #header .top_icon .all_nav span{display: block; width: 24px; height: 3px; 
-            background-color: #6E6E6E ;
+            background-color: #6E6E6E ; cursor: pointer;
             margin-bottom: 4px; border-radius: 1px;
             }
 #header .top_icon .ch{    
@@ -81,13 +81,13 @@ button{outline:0}
                       font-weight: 700; line-height: 75px;
                       }
 #nav4 .depth1 > li > a:after{content: '';height: 3px; background-color: red;
-                              position: relative; width: 0px; display: block;
+                              position: relative; width: 0px; display: block; z-index: 95;
                               transition: 0.5s;}                      
 #nav4 .depth1 > li:hover > a:after{width: 100%;}
 
 #nav4 .depth1{position: static;}
 #nav4 .depth1 li > a{font-size: 1rem;}
-#nav4 .nav_box {position: absolute; /*top:calc(2.8rem + 25px);*/top: 75px; left: 0; width: 100%;
+#nav4 .nav_box {position: absolute; /*top:calc(2.8rem + 25px);*/top: 78px; left: 0; width: 100%;
                 background-color: rgba(242,244,245,0.8); z-index: 96;
                 display: none; 
                 padding: 10px 0; color: #333; height: 270px;}
@@ -98,8 +98,7 @@ button{outline:0}
 #nav4 .nav_box .depth2:after{content: ''; display: block; clear: both;}
 #nav4 .depth2 > li{display: inline-block; box-sizing: border-box;
                     padding: 10px;}
-#nav4 .depth2 li > a{font-size: 0.812rem;}
-
+#nav4 .depth2 li > a{font-size: 0.9rem;}
 #nav4 .depth2 > li:after{content: ''; display: inline-block; width: 5px; height:5px; 
                          /*background-color:red; border-radius: 50%; */
                          margin-left: 20px; transform: translate(0, -3px);}
@@ -108,7 +107,6 @@ button{outline:0}
 /*header*/
 #header #logo{float: left; }
 #header #nav4 .depth1{float: left; /*네비완료시 width 삭제*/ }
-#header #nav4 .top_icon{position: absolute; right: 40px; top: 0;}
-
+#header #nav4 .top_icon{position: absolute; right: 45px; top: 0;}
 #header #nav4 > ul{height: 75px;}
 
