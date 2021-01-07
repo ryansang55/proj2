@@ -78,8 +78,13 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec3 .left_news p{position: absolute; top: 150px; left: 50px; color: #946E59;}
 #sec3 .right_news{width:50%; height: 600px; float: left;}
 #sec3 .right_news img{height: 299px;}
-#sec3 .right_news li{width: calc(50% - 4px); float: left; border: 1px solid #e6e6e6;;}
+#sec3 .right_news li{width: calc(50% - 4px); float: left; border: 1px solid #e6e6e6;}
 #sec3 .right_news > li{position: relative;}
+/*
+#sec3 .right_news > :nth-child(1){border-left: none; border-right: none; border-bottom: none;}
+#sec3 .right_news > :nth-child(2){border-bottom: none;border-left: none;}
+#sec3 .right_news > :nth-child(3){border-left: none; border-right: none; border-top: none;}
+#sec3 .right_news > :nth-child(4){border-top: none; border-left: none; }*/
 #sec3 .right_news h1{position: absolute; bottom: 25px; left: 20px; color: #fff;
                      font-size: 1.125rem;}
 #sec3 .right_news h2{position: absolute; bottom: -30px; left: 20px; color: #fff;
