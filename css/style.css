@@ -45,30 +45,10 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec2 .inner > div img{border: 1px solid #e6e6e6; width: 99%; margin-bottom: 1.125rem;}
 #sec2 .inner > div:last-child{margin-right:0;}
 #sec2:after{content: ''; display: block; clear: both;}
+#sec2 h1{margin-bottom: 36px;}
 #sec2 .inner > div a{box-sizing: border-box;}
 #sec2 .price{margin-bottom: 95px;}
 /*sec2 end*/
-
-
-#sec3{}
-#sec3:after{content: ''; display: block; clear: both;}
-#sec3 .inner{}
-#sec3 h2{margin-bottom: 2.5rem;}
-#sec3 .inner img{width: 100%;}
-#sec3 .left_news{width: calc(50% - 2px); background-color: red; height: 600px; float: left; margin-bottom: 95px;
-                 position: relative; border: 1px solid #e6e6e6;;}
-#sec3 .left_news img{height: 600px;}
-#sec3 .left_news h1{position: absolute; bottom: 160px; left: 70px;}
-#sec3 .left_news h2{position: absolute; bottom: 110px; left: 70px;}
-#sec3 .left_news p{position: absolute; bottom: 130px; left: 70px;}
-#sec3 .right_news{width:50%; height: 600px; float: left;}
-#sec3 .right_news img{height: 299px;}
-#sec3 .right_news li{width: calc(50% - 4px); float: left; border: 1px solid #e6e6e6;;}
-#sec3 .right_news > li{position: relative;}
-#sec3 .right_news h1{position: absolute; bottom: 25px; left: 20px; color: ;}
-#sec3 .right_news h2{position: absolute; bottom: -30px; left: 20px;}
-/*sec3 end*/
-
 
 #sec4{}
 #sec4{clear: both;}
@@ -84,14 +64,38 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec4 .price{margin-bottom: 95px;}
 #sec4 .clinic_img img{height: 248px;}
 /*sec4 end*/
+
+#sec3{}
+#sec3:after{content: ''; display: block; clear: both;}
+#sec3 .inner{}
+#sec3 h2{margin-bottom: 2.5rem;}
+#sec3 .inner img{width: 100%;}
+#sec3 .left_news{width: calc(50% - 2px); background-color: red; height: 600px; float: left; margin-bottom: 95px;
+                 position: relative; border: 1px solid #e6e6e6;;}
+#sec3 .left_news img{height: 600px;}
+#sec3 .left_news h1{position: absolute; top: 80px; left: 50px; color: #946E59;}
+#sec3 .left_news h2{position: absolute; top: 120px; left: 50px; color: #946E59;}
+#sec3 .left_news p{position: absolute; top: 150px; left: 50px; color: #946E59;}
+#sec3 .right_news{width:50%; height: 600px; float: left;}
+#sec3 .right_news img{height: 299px;}
+#sec3 .right_news li{width: calc(50% - 4px); float: left; border: 1px solid #e6e6e6;;}
+#sec3 .right_news > li{position: relative;}
+#sec3 .right_news h1{position: absolute; bottom: 25px; left: 20px; color: #fff;
+                     font-size: 1.125rem;}
+#sec3 .right_news h2{position: absolute; bottom: -30px; left: 20px; color: #fff;
+                    font-size: 0.875rem;}
+/*sec3 end*/
+
+
+
 #sec5{height: 400px;
       }
 #sec5 .notice_wrap > div{/*overflow: hidden;*/float: left; width: calc((100% - 78px) / 3); margin-right: 36px;
                         margin-bottom: 95px; border: 1px solid #e6e6e6;; position: relative;}
 #sec5 .notice_wrap > div img{width: 100%;}
 #sec5 .notice_wrap > div:last-child{margin-right: 0;}
-#sec5 .notice_wrap > div .box{border: 1px solid #e6e6e6; width: 95%; float: right; background-color: #E5E5E5;
-                              position: absolute; bottom: -50px; right: 0; height: ; box-sizing: border-box;}
+#sec5 .notice_wrap > div .box{border: 1px solid #e6e6e6; width: 100%; float: right; background-color: #E5E5E5;
+                              position: absolute; bottom: -50px; right: -10px; height: ; box-sizing: border-box;}
 #sec5 .notice_wrap > div .box dd:first-child{padding-left: 26px; padding-top: 47px;}
 #sec5 .notice_wrap > div .box dt{padding-left: 26px; padding-top: 8px; padding-bottom: 8px;}
 #sec5 .notice_wrap > div .box dd:last-child{padding-left: 26px; padding-bottom: 47px;}
