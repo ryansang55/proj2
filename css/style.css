@@ -13,7 +13,6 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
     transform: rotate(-45deg); position: absolute; top: 0px;}
 #top_popup > span{position: absolute; font-size: 1rem;}
 
-#logo{margin-bottom: 0;}
 
 .det1{color: #fff; top: calc(50% - 18px); left: 38% ; z-index: 999999; 
     border: 1px solid #fff; border-radius: 40px; padding: 5px 20px;}
@@ -22,10 +21,15 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 /*********************section****************************/
 #sec1{margin-bottom: 95px;}
 #sec1 img{width: 100%;}
-#sec1 .big_banner{width: 60%; margin-top: 3px;
-                  margin-right:10px ; float: left;}
-  
-#sec1 .small_banner{width: calc(40% - 10px); float: right; margin-top: 3px;}
+/*#sec1 .top_icon .all_nav{}*/
+#sec1 .big_banner{width: 60%; margin-top: -8px;
+                  margin-right:10px ; float: left; position: relative;}
+#sec1 .big_banner .banner_txt{ color: #fff;}  
+#sec1 .big_banner .banner_txt h2{position: absolute; top:calc(30% - 60px) ; left: 30px; font-size: 2rem;
+                                  font-weight: 400;}
+#sec1 .big_banner .banner_txt h1{position: absolute; top: 30%; left: 30px; font-size: 3.875rem;
+                                  /*font-family: 'brandon-grotesque', sans-serif;*/ font-weight:400;}
+#sec1 .small_banner{width: calc(40% - 10px); float: right; margin-top: -8px;}
 #sec1 .small_banner li{margin-bottom: 11px;}
 #sec1 .small_banner li:last-child{margin-bottom: 0;}
 #sec1 .small_banner > li{position: relative;}

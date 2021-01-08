@@ -22,7 +22,7 @@ font-family: 'Galada', cursive; */
 html{font-size:16px;}
 body{ font-size:16px;
       color:#6f6f6f;
-      font-family: 'Noto Sans KR', sans-serif, brandon-grotesque, sans-serif; }
+      font-family: 'Noto Sans KR', sans-serif, 'brandon-grotesque', sans-serif; }
 ul, ol, li{list-style-type:none}
 img, fieldset{border:none;vertical-align: middle}
 hr {clear:both;border:none}
@@ -44,16 +44,22 @@ button{outline:0}
 #wrap{width: 100%; min-width: 1024px; overflow: hidden;}
 .inner{min-width: 1000px; width: 1200px; margin: 0 auto;}
 
-#header{height: 70px;}
+#header{}
 #header .top_icon{float: right; position: relative;}
 #header .top_icon > button{width: 24px; height: 25px; margin-left: 18px;
                            transform: translate(0, 20px); border: none;}
 
-#header .top_icon .all_nav{background: none;position: absolute; top: 7px;}       
+#header .top_icon .all_nav{background: none;position: absolute; top: 8px;}       
 #header .top_icon .all_nav span{display: block; width: 24px; height: 3px; 
             background-color: #6E6E6E ; cursor: pointer;
             margin-bottom: 4px; border-radius: 1px;
             }
+   
+#header .top_icon .all_nav.on span{background: ;position: absolute; top: 8px; transition: 0.5s;}
+#header .top_icon .all_nav.on span:nth-child(1){transform: rotate(45deg);}
+#header .top_icon .all_nav.on span:nth-child(2){width: 0px;}
+#header .top_icon .all_nav.on span:nth-child(3){transform: rotate(-45deg);}
+
 #header .top_icon .ch{    
       font-size: 1rem;
       display: inline-block;
@@ -77,17 +83,17 @@ button{outline:0}
 
 #nav4 .depth1 > li {float: left; padding: 0 15px;}
 #nav4 .depth1 > li > a {display: block; 
-                      text-align: center; font-size: 1.3rem; color: #333; 
+                       font-size: 1.3rem; color: #333; 
                       font-weight: 700; line-height: 75px;
                       }
-#nav4 .depth1 > li > a:after{content: '';height: 3px; background-color: red;
+#nav4 .depth1 > li > a:after{content: '';height: 3px; background-color: red; margin-top: -16px;
                               position: relative; width: 0px; display: block; z-index: 95;
                               transition: 0.5s;}                      
 #nav4 .depth1 > li:hover > a:after{width: 100%;}
 
 #nav4 .depth1{position: static;}
 #nav4 .depth1 li > a{font-size: 1rem;}
-#nav4 .nav_box {position: absolute; /*top:calc(2.8rem + 25px);*/top: 78px; left: 0; width: 100%;
+#nav4 .nav_box {position: absolute; /*top:calc(2.8rem + 25px);*/top: 62px; left: 0; width: 100%;
                 background-color: rgba(242,244,245,0.8); z-index: 96;
                 display: none; 
                 padding: 10px 0; color: #333; height: 270px;}
@@ -105,8 +111,8 @@ button{outline:0}
 #nav4 .depth2 > li:last-child:after{display: none;}
 
 /*header*/
-#header #logo{float: left; }
+#header #logo{float: left; margin-bottom: 0;margin-right: 68px;}
 #header #nav4 .depth1{float: left; /*네비완료시 width 삭제*/ }
 #header #nav4 .top_icon{position: absolute; right: 45px; top: 0;}
-#header #nav4 > ul{height: 75px;}
+#header #nav4 > ul{}
 
