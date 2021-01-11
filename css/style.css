@@ -22,17 +22,21 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec1{margin-bottom: 95px;}
 #sec1 img{width: 100%;}
 /*#sec1 .top_icon .all_nav{}*/
-#sec1 .big_banner{width: 60%; margin-top: -8px;
+#sec1 .big_banner{width: 60%; margin-top: -11px;
                   margin-right:10px ; float: left; position: relative;}
 #sec1 .big_banner .banner_txt{ color: #fff;}  
-#sec1 .big_banner .banner_txt h2{position: absolute; top:calc(30% - 60px) ; left: 30px; font-size: 2rem;
+#sec1 .big_banner .banner_txt h2{position: absolute; top: 200px; left: 30px; font-size: 2rem;
                                   font-weight: 400;}
-#sec1 .big_banner .banner_txt h1{position: absolute; top: 30%; left: 30px; font-size: 3.875rem;
-                                  /*font-family: 'brandon-grotesque', sans-serif;*/ font-weight:400;}
-#sec1 .small_banner{width: calc(40% - 10px); float: right; margin-top: -8px;}
+#sec1 .big_banner .banner_txt h1{position: absolute; top: 260px; left: 30px; font-size: 3.5rem;
+                                  font-weight:400;}
+#sec1 .big_banner .banner_txt .h1_2{position: absolute; top: 345px; left: 30px; font-size: 3.5rem;}
+#sec1 .small_banner{width: calc(40% - 10px); float: right; margin-top: -11px;}
 #sec1 .small_banner li{margin-bottom: 11px;}
 #sec1 .small_banner li:last-child{margin-bottom: 0;}
-#sec1 .small_banner > li{position: relative;}
+#sec1 .small_banner > li{position: relative; overflow: hidden;}
+#sec1 .small_banner > li:hover img{transform: scale(1.1);}
+#sec1 .small_banner > li:hover h1{transform: scale(1.1);}
+#sec1 .small_banner > li:hover p{transform: scale(1.1);}    
 #sec1 .small_banner h1{color: #fff; position: absolute; top: 50px; left: 40px;}
 #sec1 .small_banner > li:nth-child(2) h1{color: #333333;}
 #sec1 .small_banner > li:nth-child(2) p{color: #333333;}
@@ -45,7 +49,7 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
                  overflow: hidden;
                  box-sizing: border-box;
                     float: left;
-                    }
+                    }             
 #sec2 .inner > div img{border: 1px solid #e6e6e6; width: 99%; margin-bottom: 1.125rem;}
 #sec2 .inner > div:last-child{margin-right:0;}
 #sec2:after{content: ''; display: block; clear: both;}
@@ -75,15 +79,18 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec3 h2{margin-bottom: 2.5rem;}
 #sec3 .inner img{width: 100%;}
 #sec3 .left_news{width: calc(50% - 2px); background-color: red; height: 600px; float: left; margin-bottom: 95px;
-                 position: relative; border: 1px solid #e6e6e6;;}
-#sec3 .left_news img{height: 600px;}
+                 position: relative; border: 1px solid #e6e6e6; overflow: hidden;}
+#sec3 .left_news:hover img{transform: scale(1.1);}
+                 #sec3 .left_news img{height: 600px;}
 #sec3 .left_news h1{position: absolute; top: 80px; left: 50px; color: #946E59;}
 #sec3 .left_news h2{position: absolute; top: 120px; left: 50px; color: #946E59;}
 #sec3 .left_news p{position: absolute; top: 150px; left: 50px; color: #946E59;}
 #sec3 .right_news{width:50%; height: 600px; float: left; margin-bottom: 95px;}
 #sec3 .right_news img{height: 299px;}
 #sec3 .right_news li{width: calc(50% - 4px); float: left; border: 1px solid #e6e6e6;}
-#sec3 .right_news > li{position: relative;}
+#sec3 .right_news > li{position: relative; overflow: hidden;}
+#sec3 .right_news > li:hover img{transform: scale(1.2);}
+
 /*
 #sec3 .right_news > :nth-child(1){border-left: none; border-right: none; border-bottom: none;}
 #sec3 .right_news > :nth-child(2){border-bottom: none;border-left: none;}
@@ -101,14 +108,16 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
       #sec5 h1 > a{float: right; font-size: 1.125rem;}
 #sec5 .notice_wrap > div{/*overflow: hidden;*/float: left; width: calc((100% - 78px) / 3); margin-right: 36px;
                          border: 1px solid #e6e6e6;; position: relative;}
+#sec5 .notice_wrap > div:hover img{/*transform: scale(1.1);*/}                         
 #sec5 .notice_wrap > div img{width: 100%;}
 #sec5 .notice_wrap > div:last-child{margin-right: 0;}
-#sec5 .notice_wrap > div .box{border: 1px solid #e6e6e6; width: 100%; float: right; background-color: #E5E5E5;
-                              position: absolute; bottom: -130px; right: -10px; height: ; box-sizing: border-box;
+#sec5 .notice_wrap > div .box{border: 1px solid #e6e6e6; width: 90%;  background-color: #E5E5E5;
+                              position: absolute; bottom: -80px; right: 0;box-sizing: border-box;
+                              padding: 30px 0;
                             }
-#sec5 .notice_wrap > div .box dd:first-child{padding-left: 26px; padding-top: 47px;}
+#sec5 .notice_wrap > div .box dd:first-child{padding-left: 26px; padding-top: 0px;}
 #sec5 .notice_wrap > div .box dt{padding-left: 26px; padding-top: 8px; padding-bottom: 8px;}
-#sec5 .notice_wrap > div .box dd:last-child{padding-left: 26px; padding-bottom: 47px;}
+#sec5 .notice_wrap > div .box dd:last-child{padding-left: 26px; padding-bottom: 0px;}
 #sec5::after{content: ''; clear: both; display: block;}
 
 /*sec5 end*/
@@ -124,9 +133,9 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 #sec6 ul .pho .em{ position: relative;}
 #sec6 ul .pho .em span{position: absolute; right: 0; top: 0px;}
 #sec6 ul .pho p span{float: right;}
-#sec6 ul > li.pho .fax{padding-top: 32px;}
+#sec6 ul > li.pho .fax{padding-top: 16px;}
 #sec6 ul > li.pho .go{border: 1px solid #fff; padding: 6px 23px; display: block; clear: both;
-                        margin-top: 20px;}
+                        margin-top: 12px;}
 #sec6 ul > li.pho .call_num{font-size: 1.75rem; margin-bottom: 20px; margin-left: 10px;}
 #sec6 ul > li.pho img{margin-top: -10px;}
 #sec6 ul > li.merch, #sec6 ul > li.ask{padding: 60px 33px;}
@@ -143,8 +152,8 @@ h3{font-size: 0.9375rem; margin-bottom: 2.25rem;}/*15px*/
 
 
 /*********************footer****************************/
-#footer{}
-#footer .inner{background-color: #222222; height: 200px;}
+#footer{background-color: #222222;}
+#footer .inner{height: 200px;}
 #footer .wr{ max-width: 1000px;
             margin: 0 auto; }
 #footer > div img{width: 46px;}
